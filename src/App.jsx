@@ -79,11 +79,11 @@ const App = ({ isServerInfo }) => {
                 <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
                   <InchDex chain="eth" />
                 </Tabs.TabPane>
-                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
-                  <InchDex chain="bsc" />
-                </Tabs.TabPane>
                 <Tabs.TabPane tab={<span>Polygon</span>} key="3">
                   <InchDex chain="polygon" />
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
+                  <InchDex chain="bsc" />
                 </Tabs.TabPane>
               </Tabs>
             </Route>
@@ -92,10 +92,10 @@ const App = ({ isServerInfo }) => {
                 <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
                   <ETHERC20Balance chain="0x5"/>
                 </Tabs.TabPane>
-                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
+                <Tabs.TabPane tab={<span>Polygon</span>} key="2">
                   <MaticERC20Balance chain="0x13881"/>
                 </Tabs.TabPane>
-                <Tabs.TabPane tab={<span>Polygon</span>} key="3">
+                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="3">
                   <BSCERC20Balance chain="0x61"/>
                 </Tabs.TabPane>
               </Tabs>
@@ -105,11 +105,11 @@ const App = ({ isServerInfo }) => {
                 <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
                   <ERC20Transfers chain="0x5"/>
                 </Tabs.TabPane>
-                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
-                  <ERC20Transfers chain="0x13881"/>
-                </Tabs.TabPane>
                 <Tabs.TabPane tab={<span>Polygon</span>} key="3">
                   <ERC20Transfers chain="0x61"/>
+                </Tabs.TabPane>
+                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
+                  <ERC20Transfers chain="0x13881"/>
                 </Tabs.TabPane>
               </Tabs>
             </Route>
