@@ -7,9 +7,11 @@ const styles = {
     fontWeight: "700",
   },
 };
-function ERC20Balance(props) {
+function ETHERC20Balance(props) {
   const { data: assets } = useERC20Balances(props);
   const { Moralis } = useMoralis();
+
+  console.log(props.name);
 
   const columns = [
     {
@@ -54,7 +56,7 @@ function ERC20Balance(props) {
 
   return (
     <div style={{ width: "65vw", padding: "15px" }}>
-      <h1 style={styles.title}>💰Token Balances</h1>
+      <h1 style={styles.title}>💰ETH Token Balances</h1>
       <Skeleton loading={!assets}>
         <Table
           dataSource={assets}
@@ -67,4 +69,4 @@ function ERC20Balance(props) {
     </div>
   );
 }
-export default ERC20Balance;
+export default ETHERC20Balance;
